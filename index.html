@@ -50,6 +50,22 @@
             top: -8px;
             right: -8px;
         }
+        .collection-card {
+            transition: transform 0.3s ease;
+        }
+        .collection-card:hover {
+            transform: translateY(-5px);
+        }
+        .material-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #F5F0E6;
+            margin-right: 12px;
+        }
     </style>
 </head>
 <body>
@@ -114,34 +130,70 @@
         <div class="absolute inset-0 bg-black opacity-30"></div>
         <div class="container mx-auto px-4 relative z-10">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">Elegance, Redefined</h1>
-            <p class="text-xl md:text-2xl mb-8">Discover Jewelry & Bags That Speak Style</p>
-            <a href="#" class="btn-primary inline-block bg-[#6B1E3E] text-[#F5F0E6] px-8 py-3 rounded-md font-medium">Shop Now</a>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Discover handcrafted jewelry and luxury accessories that celebrate your unique style and elevate every occasion.</p>
+            <a href="#" class="btn-primary inline-block bg-[#6B1E3E] text-[#F5F0E6] px-8 py-3 rounded-md font-medium hover:shadow-lg transition-all duration-300">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Brand Promise -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="material-icon mx-auto mb-4 text-[#6B1E3E]">
+                        <i class="fas fa-gem text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Ethically Sourced</h3>
+                    <p class="text-gray-600">We use only conflict-free gemstones and recycled precious metals in all our jewelry.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="material-icon mx-auto mb-4 text-[#6B1E3E]">
+                        <i class="fas fa-award text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Artisan Crafted</h3>
+                    <p class="text-gray-600">Each piece is handcrafted by skilled artisans with decades of jewelry-making expertise.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="material-icon mx-auto mb-4 text-[#6B1E3E]">
+                        <i class="fas fa-heart text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Lifetime Care</h3>
+                    <p class="text-gray-600">Enjoy complimentary cleaning, polishing, and minor repairs for the lifetime of your Ryraah pieces.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Featured Categories -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-[#F5F0E6]">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Collections</h2>
+            <h2 class="text-3xl font-bold text-center mb-4">Our Collections</h2>
+            <p class="text-center mb-12 max-w-2xl mx-auto">Explore our carefully curated collections designed to complement your personal style</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="relative overflow-hidden rounded-lg group">
+                <div class="collection-card relative overflow-hidden rounded-lg group">
                     <img src="https://images.unsplash.com/photo-1611591437281-db6f0c56e1b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Jewelry" class="w-full h-96 object-cover transition duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                        <h3 class="text-2xl font-bold text-white">Jewelry</h3>
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center flex-col">
+                        <h3 class="text-2xl font-bold text-white mb-2">Jewelry</h3>
+                        <p class="text-white text-center px-4">Timeless pieces that become instant heirlooms</p>
+                        <a href="#" class="mt-4 inline-block bg-white text-[#6B1E3E] px-6 py-2 rounded-md font-medium text-sm hover:bg-[#6B1E3E] hover:text-white transition">View Collection</a>
                     </div>
                     <a href="#" class="absolute inset-0"></a>
                 </div>
-                <div class="relative overflow-hidden rounded-lg group">
+                <div class="collection-card relative overflow-hidden rounded-lg group">
                     <img src="https://images.unsplash.com/photo-1591564709791-b4d0edf5d966?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Handbags" class="w-full h-96 object-cover transition duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                        <h3 class="text-2xl font-bold text-white">Handbags</h3>
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center flex-col">
+                        <h3 class="text-2xl font-bold text-white mb-2">Handbags</h3>
+                        <p class="text-white text-center px-4">Luxury bags that combine function with impeccable style</p>
+                        <a href="#" class="mt-4 inline-block bg-white text-[#6B1E3E] px-6 py-2 rounded-md font-medium text-sm hover:bg-[#6B1E3E] hover:text-white transition">View Collection</a>
                     </div>
                     <a href="#" class="absolute inset-0"></a>
                 </div>
-                <div class="relative overflow-hidden rounded-lg group">
+                <div class="collection-card relative overflow-hidden rounded-lg group">
                     <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Gift Sets" class="w-full h-96 object-cover transition duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                        <h3 class="text-2xl font-bold text-white">Gift Sets</h3>
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center flex-col">
+                        <h3 class="text-2xl font-bold text-white mb-2">Gift Sets</h3>
+                        <p class="text-white text-center px-4">Thoughtfully paired pieces for unforgettable gifting</p>
+                        <a href="#" class="mt-4 inline-block bg-white text-[#6B1E3E] px-6 py-2 rounded-md font-medium text-sm hover:bg-[#6B1E3E] hover:text-white transition">View Collection</a>
                     </div>
                     <a href="#" class="absolute inset-0"></a>
                 </div>
@@ -150,18 +202,21 @@
     </section>
 
     <!-- Featured Products -->
-    <section class="py-16 bg-[#F5F0E6]">
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center mb-8">
                 <h2 class="text-3xl font-bold">New Arrivals</h2>
-                <a href="#" class="text-[#6B1E3E] hover:underline">View All</a>
+                <a href="#" class="text-[#6B1E3E] hover:underline flex items-center">
+                    View All
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <!-- Product 1 -->
                 <div class="product-card bg-white rounded-lg overflow-hidden shadow-md relative">
                     <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1611591437281-db6f0c56e1b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Gold Pearl Necklace" class="w-full h-80 object-cover">
+                        <img src="https://images.unsplash.com/photo-1603974372035-96d7c0b8b80e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Gold Pearl Necklace" class="w-full h-80 object-cover">
                         <div class="product-overlay absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center opacity-0">
                             <div class="flex space-x-4">
                                 <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
@@ -179,6 +234,7 @@
                     </div>
                     <div class="p-4">
                         <h3 class="text-lg font-semibold mb-1">Gold Pearl Necklace</h3>
+                        <p class="text-gray-500 text-sm mb-2">18K gold with freshwater pearls</p>
                         <div class="flex items-center mb-2">
                             <div class="flex text-yellow-400">
                                 <i class="fas fa-star"></i>
@@ -201,7 +257,7 @@
                 <!-- Product 2 -->
                 <div class="product-card bg-white rounded-lg overflow-hidden shadow-md relative">
                     <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Vino Leather Clutch" class="w-full h-80 object-cover">
+                        <img src="https://images.unsplash.com/photo-1611591437281-db6f0c56e1b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Vino Leather Clutch" class="w-full h-80 object-cover">
                         <div class="product-overlay absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center opacity-0">
                             <div class="flex space-x-4">
                                 <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
@@ -218,6 +274,7 @@
                     </div>
                     <div class="p-4">
                         <h3 class="text-lg font-semibold mb-1">Vino Leather Clutch</h3>
+                        <p class="text-gray-500 text-sm mb-2">Italian leather with gold-tone hardware</p>
                         <div class="flex items-center mb-2">
                             <div class="flex text-yellow-400">
                                 <i class="fas fa-star"></i>
@@ -258,6 +315,7 @@
                     </div>
                     <div class="p-4">
                         <h3 class="text-lg font-semibold mb-1">Pearl & Gold Bracelet Set</h3>
+                        <p class="text-gray-500 text-sm mb-2">Set of 3 adjustable bracelets</p>
                         <div class="flex items-center mb-2">
                             <div class="flex text-yellow-400">
                                 <i class="fas fa-star"></i>
@@ -297,6 +355,7 @@
                     </div>
                     <div class="p-4">
                         <h3 class="text-lg font-semibold mb-1">Elegant Evening Bag</h3>
+                        <p class="text-gray-500 text-sm mb-2">Silk exterior with satin lining</p>
                         <div class="flex items-center mb-2">
                             <div class="flex text-yellow-400">
                                 <i class="fas fa-star"></i>
@@ -315,23 +374,226 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Product 5 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md relative">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Diamond Stud Earrings" class="w-full h-80 object-cover">
+                        <div class="product-overlay absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center opacity-0">
+                            <div class="flex space-x-4">
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-[#6B1E3E] text-white px-2 py-1 text-xs rounded">New</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Diamond Stud Earrings</h3>
+                        <p class="text-gray-500 text-sm mb-2">0.5 carat total weight, 14K gold</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(56)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-[#6B1E3E] font-bold">$249.99</span>
+                            <button class="text-[#6B1E3E] hover:text-[#822A4E]">
+                                <i class="fas fa-plus-circle text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md relative">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1611594606051-df7d8e153c4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Silver Statement Necklace" class="w-full h-80 object-cover">
+                        <div class="product-overlay absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center opacity-0">
+                            <div class="flex space-x-4">
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Silver Statement Necklace</h3>
+                        <p class="text-gray-500 text-sm mb-2">925 sterling silver with zirconia accents</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(38)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-[#6B1E3E] font-bold">$179.99</span>
+                            <button class="text-[#6B1E3E] hover:text-[#822A4E]">
+                                <i class="fas fa-plus-circle text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md relative">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1611591437281-db6f0c56e1b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Leather Crossbody Bag" class="w-full h-80 object-cover">
+                        <div class="product-overlay absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center opacity-0">
+                            <div class="flex space-x-4">
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-[#6B1E3E] text-white px-2 py-1 text-xs rounded">Bestseller</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Leather Crossbody Bag</h3>
+                        <p class="text-gray-500 text-sm mb-2">Genuine leather with multiple compartments</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(47)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-[#6B1E3E] font-bold">$199.99</span>
+                            <button class="text-[#6B1E3E] hover:text-[#822A4E]">
+                                <i class="fas fa-plus-circle text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md relative">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Pearl Drop Earrings" class="w-full h-80 object-cover">
+                        <div class="product-overlay absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center opacity-0">
+                            <div class="flex space-x-4">
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="bg-white text-[#6B1E3E] p-2 rounded-full hover:bg-[#6B1E3E] hover:text-white transition">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-1">Pearl Drop Earrings</h3>
+                        <p class="text-gray-500 text-sm mb-2">Freshwater pearls with gold accents</p>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(22)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-[#6B1E3E] font-bold">$79.99</span>
+                            <button class="text-[#6B1E3E] hover:text-[#822A4E]">
+                                <i class="fas fa-plus-circle text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Banner Section -->
-    <section class="py-16 bg-[#6B1E3E] text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6">Signature Collection</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">Our most exquisite pieces, designed to make you feel extraordinary on every occasion.</p>
-            <a href="#" class="btn-primary inline-block bg-white text-[#6B1E3E] px-8 py-3 rounded-md font-medium">Explore Collection</a>
+    <section class="py-20 bg-[#6B1E3E] text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-repeat" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNGRkYiIGZpbGwtb3BhY2l0eT0iMC4yIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIgMS44LTQgNC00czQgMS44IDQgNC0xLjggNC00IDQtNC0xLjgtNC00eiIvPjwvZz48L2c+PC9zdmc+');"></div>
+        </div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Signature Collection</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Our most exquisite pieces, designed to make you feel extraordinary on every occasion. Each item in this limited collection is handcrafted with exceptional attention to detail.</p>
+            <a href="#" class="btn-primary inline-block bg-white text-[#6B1E3E] px-8 py-3 rounded-md font-medium hover:shadow-lg transition-all duration-300">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Jewelry Care Guide -->
+    <section class="py-16 bg-[#F5F0E6]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Jewelry Care Guide</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="material-icon mb-4 text-[#6B1E3E]">
+                        <i class="fas fa-hand-sparkles text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Cleaning</h3>
+                    <p class="text-gray-600">Use a soft, lint-free cloth to gently polish your jewelry. For deeper cleaning, use mild soap and warm water with a soft brush.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="material-icon mb-4 text-[#6B1E3E]">
+                        <i class="fas fa-spray-can text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Chemicals</h3>
+                    <p class="text-gray-600">Remove jewelry before applying perfume, hairspray, or lotions. These products can damage metals and dull gemstones.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="material-icon mb-4 text-[#6B1E3E]">
+                        <i class="fas fa-swimming-pool text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Water Exposure</h3>
+                    <p class="text-gray-600">Avoid wearing jewelry in pools, hot tubs, or the ocean. Chlorine and salt can be particularly damaging to precious metals.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="material-icon mb-4 text-[#6B1E3E]">
+                        <i class="fas fa-box-open text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Storage</h3>
+                    <p class="text-gray-600">Store pieces separately in soft pouches or jewelry boxes to prevent scratching. Keep chains fastened to avoid tangling.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Testimonials -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+            <h2 class="text-3xl font-bold text-center mb-4">What Our Customers Say</h2>
+            <p class="text-center mb-12 max-w-2xl mx-auto">Join thousands of satisfied customers who love their Ryraah pieces</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
                 <div class="testimonial-card bg-[#F5F0E6] p-6 rounded-lg">
@@ -344,14 +606,14 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-4">"The quality of Ryraah's jewelry is unmatched. I've received so many compliments on my necklace!"</p>
+                    <p class="text-gray-700 mb-4">"The quality of Ryraah's jewelry is unmatched. I've received so many compliments on my necklace! The craftsmanship is evident in every detail, and it's become my go-to piece for both casual and formal occasions."</p>
                     <div class="flex items-center">
                         <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
                             <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah J." class="w-full h-full object-cover">
                         </div>
                         <div>
                             <h4 class="font-semibold">Sarah J.</h4>
-                            <p class="text-sm text-gray-500">Verified Customer</p>
+                            <p class="text-sm text-gray-500">Verified Customer | 5 purchases</p>
                         </div>
                     </div>
                 </div>
@@ -367,14 +629,14 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-4">"My Ryraah clutch is my go-to accessory for every event. It's elegant and surprisingly spacious!"</p>
+                    <p class="text-gray-700 mb-4">"My Ryraah clutch is my go-to accessory for every event. It's elegant and surprisingly spacious! The leather has aged beautifully over the past year, developing a lovely patina that makes it uniquely mine."</p>
                     <div class="flex items-center">
                         <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
                             <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Maya T." class="w-full h-full object-cover">
                         </div>
                         <div>
                             <h4 class="font-semibold">Maya T.</h4>
-                            <p class="text-sm text-gray-500">Verified Customer</p>
+                            <p class="text-sm text-gray-500">Verified Customer | 3 purchases</p>
                         </div>
                     </div>
                 </div>
@@ -390,14 +652,14 @@
                             <i class="fas fa-star-half-alt"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-4">"I gifted my sister a Ryraah bracelet set and she hasn't stopped wearing it. The packaging was beautiful too!"</p>
+                    <p class="text-gray-700 mb-4">"I gifted my sister a Ryraah bracelet set and she hasn't stopped wearing it. The packaging was beautiful too! Customer service helped me with engraving and ensured it arrived perfectly for her birthday."</p>
                     <div class="flex items-center">
                         <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
                             <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Emma L." class="w-full h-full object-cover">
                         </div>
                         <div>
                             <h4 class="font-semibold">Emma L.</h4>
-                            <p class="text-sm text-gray-500">Verified Customer</p>
+                            <p class="text-sm text-gray-500">Verified Customer | 2 purchases</p>
                         </div>
                     </div>
                 </div>
@@ -408,7 +670,7 @@
     <!-- Instagram Feed -->
     <section class="py-16 bg-[#F5F0E6]">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Follow Us @Ryraah</h2>
+            <h2 class="text-3xl font-bold text-center mb-4">Follow Us @Ryraah</h2>
             <p class="text-center mb-12 max-w-2xl mx-auto">Tag us in your Ryraah moments for a chance to be featured!</p>
             
             <div class="instagram-feed flex overflow-x-auto pb-4 space-x-4">
@@ -466,6 +728,17 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Instagram Post 6 -->
+                <div class="flex-shrink-0 w-64 h-64 rounded-lg overflow-hidden relative group">
+                    <img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1889&q=80" alt="Instagram Post" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <div class="text-white text-center">
+                            <i class="fab fa-instagram text-2xl mb-2"></i>
+                            <p>View on Instagram</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -473,14 +746,14 @@
     <!-- Newsletter -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto bg-[#F5F0E6] rounded-lg p-8 md:p-12">
-                <h2 class="text-3xl font-bold text-center mb-4">Join Our Community</h2>
-                <p class="text-center mb-8">Subscribe to our newsletter for exclusive offers, styling tips, and early access to new collections.</p>
+            <div class="max-w-4xl mx-auto bg-[#F5F0E6] rounded-lg p-8 md:p-12 text-center">
+                <h2 class="text-3xl font-bold mb-4">Join Our Community</h2>
+                <p class="mb-8 max-w-2xl mx-auto">Subscribe to our newsletter for exclusive offers, styling tips, and early access to new collections. Get 15% off your first order when you sign up!</p>
                 <form class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
                     <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#6B1E3E]">
-                    <button type="submit" class="btn-primary bg-[#6B1E3E] text-white px-8 py-3 rounded-md font-medium">Subscribe</button>
+                    <button type="submit" class="btn-primary bg-[#6B1E3E] text-white px-8 py-3 rounded-md font-medium hover:shadow-lg">Subscribe</button>
                 </form>
-                <p class="text-center text-sm text-gray-500 mt-4">We respect your privacy. Unsubscribe at any time.</p>
+                <p class="text-sm text-gray-500 mt-4">We respect your privacy. Unsubscribe at any time.</p>
             </div>
         </div>
     </section>
@@ -492,7 +765,7 @@
                 <!-- About -->
                 <div>
                     <h3 class="text-xl font-bold mb-4">Ryraah</h3>
-                    <p class="mb-4">Elegant jewelry and accessories designed to complement your unique style.</p>
+                    <p class="mb-4">Founded in 2015, Ryraah creates elegant jewelry and accessories designed to complement your unique style. Each piece is crafted with care and attention to detail.</p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
@@ -509,6 +782,7 @@
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Necklaces</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Earrings</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Bracelets</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Rings</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Handbags</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Gift Cards</a></li>
                     </ul>
@@ -523,6 +797,7 @@
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping & Returns</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Size Guide</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Track Order</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Jewelry Care</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
                     </ul>
                 </div>
@@ -547,6 +822,7 @@
                         <img src="https://via.placeholder.com/40x25" alt="Visa" class="h-6">
                         <img src="https://via.placeholder.com/40x25" alt="Mastercard" class="h-6">
                         <img src="https://via.placeholder.com/40x25" alt="Amex" class="h-6">
+                        <img src="https://via.placeholder.com/40x25" alt="Discover" class="h-6">
                         <img src="https://via.placeholder.com/40x25" alt="PayPal" class="h-6">
                     </div>
                 </div>
